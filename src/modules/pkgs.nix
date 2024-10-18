@@ -6,6 +6,7 @@
 
     systemPackages = with pkgs; [
       git
+      github-cli
       vim
       emacs
       vscode.fhs
