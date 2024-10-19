@@ -1,0 +1,58 @@
+diff --git a/src/colors.h b/src/colors.h
+index 9ba22b3..d7d03c5 100644
+--- a/src/colors.h
++++ b/src/colors.h
+@@ -1,6 +1,7 @@
+ #ifndef COLORS_H_
+ #define COLORS_H_
+ 
++/* foregrounds */
+ #define BLACK "\033[0;30m"
+ #define RED "\033[0;31m"
+ #define GREEN "\033[0;32m"
+@@ -11,4 +12,14 @@
+ #define WHITE "\033[0;37m"
+ #define RESET "\033[0m"
+ 
++/* backgrounds */
++#define BLKB "\e[40m"
++#define REDB "\e[41m"
++#define GRNB "\e[42m"
++#define YELB "\e[43m"
++#define BLUB "\e[44m"
++#define MAGB "\e[45m"
++#define CYNB "\e[46m"
++#define WHTB "\e[47m"
++
+ #endif
+diff --git a/src/palette.c b/src/palette.c
+index 2ef1bec..bdb8b5b 100644
+--- a/src/palette.c
++++ b/src/palette.c
+@@ -3,7 +3,7 @@
+ #include "palette.h"
+ #include "colors.h"
+ 
+-#define CHARACTER ""
++#define CHARACTER "   "
+ 
+ /**
+  * This module prints the colored circles in the output.
+@@ -14,13 +14,13 @@ void module_palette_init(void *prm) {
+ 	int i = 0;
+ 
+         char *colors[8] = {
+-                BLACK, RED, GREEN,
+-                YELLOW, BLUE, MAGENTA,
+-                CYAN, WHITE
++                BLKB, REDB, GRNB,
++                YELB, BLUB, MAGB,
++                CYNB, WHTB
+         };
+ 
+         for (; i < 8; i++)
+-                printf("%s%s ", colors[i], CHARACTER);
++                printf("%s%s", colors[i], CHARACTER);
+ 
+         printf("%s\n", RESET);
+ }

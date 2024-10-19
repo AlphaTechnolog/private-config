@@ -1,6 +1,7 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./modules/overlays.nix
     ./modules/boot.nix
     ./modules/networking.nix
     ./modules/services.nix
