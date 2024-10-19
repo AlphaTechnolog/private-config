@@ -20,7 +20,6 @@
     in [
       zig
       zls
-      cutefetch
       git
       github-cli
       vscode

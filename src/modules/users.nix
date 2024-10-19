@@ -8,6 +8,8 @@
       spotify
       fastfetch
       vesktop
+      open-repo
+      cutefetch
     ];
   };
 }

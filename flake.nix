@@ -2,6 +2,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
     cutefetch.url = "github:AlphaTechnolog/cutefetch";
+    open-repo.url = "github:AlphaTechnolog/open-repo";
   };
 
   outputs = { self, nixpkgs, cutefetch, ... } @inputs: let
