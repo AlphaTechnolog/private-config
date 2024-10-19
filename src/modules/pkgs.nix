@@ -1,19 +1,33 @@
 { pkgs, ... }: {
+  programs.firefox = {
+    enable = true;
+  };
+
   environment = {
     etc.openvpn = {
       source = "${pkgs.update-resolv-conf}/libexec/openvpn";
     };
 
-    systemPackages = with pkgs; [
+    systemPackages = with pkgs; (let
+      vscode = vscode-with-extensions.override {
+        vscodeExtensions = with vscode-extensions; [
+          bbenoist.nix
+          ms-vscode-remote.remote-ssh
+          ziglang.vscode-zig
+          ms-python.python
+        ];
+      };
+    in [
+      zig
+      zls
       git
       github-cli
+      vscode
       vim
       emacs
-      vscode.fhs
-      firefox
       wget
       openvpn
       update-resolv-conf
-    ];
+    ]);
   };
 }
