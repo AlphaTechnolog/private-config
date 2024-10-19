@@ -3,6 +3,10 @@
     enable = true;
   };
 
+  programs.nix-ld = {
+    enable = true;
+  };
+
   environment = {
     etc.openvpn = {
       source = "${pkgs.update-resolv-conf}/libexec/openvpn";
@@ -15,6 +19,7 @@
           ms-vscode-remote.remote-ssh
           ziglang.vscode-zig
           ms-python.python
+          rust-lang.rust-analyzer
         ];
       };
     in [

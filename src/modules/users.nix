@@ -10,6 +10,7 @@
       vesktop
       open-repo
       cutefetch
+      cartero
     ];
   };
 }
