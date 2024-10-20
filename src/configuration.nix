@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   imports = [
     ./hardware-configuration.nix
     ./modules/overlays.nix
@@ -11,5 +11,16 @@
     ./modules/virtualisation.nix
   ];
 
-  system.stateVersion = "24.05";
+  system = {
+    stateVersion = "24.05";
+
+    # userActivationScripts.example = {
+    #   deps = [];
+    #   text = let
+    #     inherit (pkgs) lib hello;
+    #   in ''
+    #     ${lib.getExe hello} | tee $HOME/text.txt
+    #   '';
+    # };
+  };
 }

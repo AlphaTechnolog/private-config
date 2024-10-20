@@ -2,11 +2,13 @@
   nixpkgs.overlays = [
     (_: final: let
       inherit (final) system;
+      defaultPackage = package: inputs.${package}.packages.${system}.default;
     in {
-      open-repo = inputs.open-repo.packages.${system}.default;
-      cartero = inputs.cartero.packages.${system}.default;
+      open-repo = defaultPackage "open-repo";
+      cartero = defaultPackage "cartero";
+      harakara-terminal = defaultPackage "harakara-terminal";
 
-      cutefetch = inputs.cutefetch.packages.${system}.default.overrideAttrs {
+      cutefetch = (defaultPackage "cutefetch").overrideAttrs {
         patches = [
           ./patches/001-cutefetch-disable-nerdfonts.patch
         ];

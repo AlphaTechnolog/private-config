@@ -11,6 +11,8 @@
       open-repo
       cutefetch
       cartero
+      htop
+      harakara-terminal
     ];
   };
 }

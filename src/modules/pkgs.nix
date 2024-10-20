@@ -19,8 +19,8 @@
           ms-vscode-remote.remote-ssh
           ziglang.vscode-zig
           ms-python.python
-          rust-lang.rust-analyzer
           vue.volar
+          rust-lang.rust-analyzer
         ];
       };
     in [
@@ -37,6 +37,7 @@
       emacs
       wget
       openvpn
+      tigervnc
       update-resolv-conf
     ]);
   };
