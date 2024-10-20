@@ -20,9 +20,14 @@
           ziglang.vscode-zig
           ms-python.python
           rust-lang.rust-analyzer
+          vue.volar
         ];
       };
     in [
+      gcc
+      pkg-config
+      cargo
+      rustc
       zig
       zls
       git
