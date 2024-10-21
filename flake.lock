@@ -135,11 +135,11 @@
         "zig": "zig"
       },
       "locked": {
-        "lastModified": 1729466570,
-        "narHash": "sha256-MbqebTBAHaBvx7VLbjSxUgU09Yg2FZbU7fN71dBkXpg=",
+        "lastModified": 1729468536,
+        "narHash": "sha256-pTQZEFeAWnA4oXEk0b7i13GLhzmtWoqxhqUq7v6iPX4=",
         "owner": "AlphaTechnolog",
         "repo": "harakara-terminal",
-        "rev": "5a644ece4d5bbd9ef01e1597a051348900400a1a",
+        "rev": "33133cbf9afd210e864888ea0bd73741a5b48617",
         "type": "github"
       },
       "original": {

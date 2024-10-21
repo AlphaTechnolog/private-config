@@ -9,18 +9,8 @@
     ./modules/pkgs.nix
     ./modules/nix.nix
     ./modules/virtualisation.nix
+    ./user-config
   ];
 
-  system = {
-    stateVersion = "24.05";
-
-    # userActivationScripts.example = {
-    #   deps = [];
-    #   text = let
-    #     inherit (pkgs) lib hello;
-    #   in ''
-    #     ${lib.getExe hello} | tee $HOME/text.txt
-    #   '';
-    # };
-  };
+  system.stateVersion = "24.05";
 }
