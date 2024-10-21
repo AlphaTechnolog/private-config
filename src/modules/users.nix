@@ -6,7 +6,6 @@
 
     packages = with pkgs; [
       spotify
-      fastfetch
       vesktop
       open-repo
       cutefetch
