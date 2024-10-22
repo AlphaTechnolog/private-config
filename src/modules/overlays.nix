@@ -1,6 +1,6 @@
 { inputs, ... }: {
   nixpkgs.overlays = [
-    (_: final: let
+    (prev: final: let
       inherit (final) system;
       defaultPackage = package: inputs.${package}.packages.${system}.default;
     in {

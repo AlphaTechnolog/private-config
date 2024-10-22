@@ -14,6 +14,7 @@
       gnome-builder
       gnome-solanum
       harakara-terminal
+      remmina
     ];
   };
 }
