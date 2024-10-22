@@ -2,6 +2,7 @@
   imports = [
     ./hardware-configuration.nix
     ./modules/overlays.nix
+    ./modules/substituters.nix
     ./modules/boot.nix
     ./modules/networking.nix
     ./modules/services.nix

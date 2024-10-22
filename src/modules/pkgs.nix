@@ -21,6 +21,7 @@
           ms-python.python
           vue.volar
           rust-lang.rust-analyzer
+          bradlc.vscode-tailwindcss
         ];
       };
     in [
@@ -39,6 +40,8 @@
       openvpn
       tigervnc
       update-resolv-conf
+      gparted
+      ntfs3g
     ]);
   };
 }

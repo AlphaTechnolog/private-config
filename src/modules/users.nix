@@ -11,6 +11,8 @@
       cutefetch
       cartero
       htop
+      gnome-builder
+      gnome-solanum
       harakara-terminal
     ];
   };
