@@ -1,5 +1,6 @@
-{ pkgs, ... }: {
+{
   imports = [
+    ./disk-configuration.nix
     ./hardware-configuration.nix
     ./modules/overlays.nix
     ./modules/substituters.nix

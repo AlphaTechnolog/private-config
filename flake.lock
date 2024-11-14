@@ -6,11 +6,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1728674440,
-        "narHash": "sha256-eCcEb0/tX3uUz1S6tCzU4SY1IEHtIUFqngaG5ENLa20=",
+        "lastModified": 1730743833,
+        "narHash": "sha256-n7pE2kg9mZB5c0pj/YBvwzxxfDLE0iT5aRgbzLTJ8SM=",
         "owner": "danirod",
         "repo": "cartero",
-        "rev": "8a3fb932f935df55c5e7dea0ebba6940b4b9b1c9",
+        "rev": "69939a4f8276139ab36d170a5a214d0798c8b4de",
         "type": "github"
       },
       "original": {
@@ -25,16 +25,36 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1727397976,
-        "narHash": "sha256-dxiQCr3Y0wxmSfENiRaBRxMxOo++n0YO1tWwX68c/RU=",
+        "lastModified": 1730053670,
+        "narHash": "sha256-9FnrZ+etQDcS6i3WhYrArqWYmMY9qxfioT5nX1JXv+c=",
         "owner": "AlphaTechnolog",
         "repo": "cutefetch",
-        "rev": "865499342fc687bfd3dee22233352f53e9e84e45",
+        "rev": "77012db759da7c26b3a3e6d400c11dc928667ff2",
         "type": "github"
       },
       "original": {
         "owner": "AlphaTechnolog",
         "repo": "cutefetch",
+        "type": "github"
+      }
+    },
+    "disko": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1731536440,
+        "narHash": "sha256-FEtT20wWh4xpgUHZgcefqycvK3UkhKf+bER0wT0k7aM=",
+        "owner": "nix-community",
+        "repo": "disko",
+        "rev": "9c7de5582ed980715a87fdb60c15e3d59cc750dd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "disko",
         "type": "github"
       }
     },
@@ -135,11 +155,11 @@
         "zig": "zig"
       },
       "locked": {
-        "lastModified": 1729468536,
-        "narHash": "sha256-pTQZEFeAWnA4oXEk0b7i13GLhzmtWoqxhqUq7v6iPX4=",
+        "lastModified": 1730131395,
+        "narHash": "sha256-D5kxI0HMqPUkT/EJDHAPmQvFx1jqL8GkfMrrfdbsY/I=",
         "owner": "AlphaTechnolog",
         "repo": "harakara-terminal",
-        "rev": "33133cbf9afd210e864888ea0bd73741a5b48617",
+        "rev": "eb5e3e5efa5b87997ba6bb3c498e84cdfd97bd7c",
         "type": "github"
       },
       "original": {
@@ -197,15 +217,16 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1729463690,
-        "narHash": "sha256-l1jt4L6QLVxRZ48mTh3BGXTGK3cBE1mvhnPDZ5uT0Pw=",
-        "owner": "nixos",
+        "lastModified": 1731139594,
+        "narHash": "sha256-IigrKK3vYRpUu+HEjPL/phrfh7Ox881er1UEsZvw9Q4=",
+        "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "93767133bac3e35fc7371941fcacac26efcfbd77",
+        "rev": "76612b17c0ce71689921ca12d9ffdc9c23ce40b2",
         "type": "github"
       },
       "original": {
-        "owner": "nixos",
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -232,11 +253,11 @@
         "zig": "zig_2"
       },
       "locked": {
-        "lastModified": 1729332938,
-        "narHash": "sha256-EO/aspijPrBnquIIxSh2KO2CfGFtA9Cf5P/au6nuWIc=",
+        "lastModified": 1730054486,
+        "narHash": "sha256-CZ98dQOxK6+JbiGCcFcBIFskn9gr8xGZlKUwWElcGOc=",
         "owner": "AlphaTechnolog",
         "repo": "open-repo",
-        "rev": "c569079f8db80f905717ff74d1c185747bcd0ae8",
+        "rev": "9819ea7080b6f9c5ed29b4f47bac725a157bb2bc",
         "type": "github"
       },
       "original": {
@@ -249,9 +270,11 @@
       "inputs": {
         "cartero": "cartero",
         "cutefetch": "cutefetch",
+        "disko": "disko",
         "harakara-terminal": "harakara-terminal",
         "nixpkgs": "nixpkgs_4",
-        "open-repo": "open-repo"
+        "open-repo": "open-repo",
+        "systems": "systems_6"
       }
     },
     "systems": {
@@ -326,6 +349,21 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_6": {
+      "locked": {
+        "lastModified": 1689347949,
+        "narHash": "sha256-12tWmuL2zgBgZkdoB6qXZsgJEH9LR3oUgpaQq2RbI80=",
+        "owner": "nix-systems",
+        "repo": "default-linux",
+        "rev": "31732fcf5e8fea42e59c2488ad31a0e651500f68",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default-linux",
         "type": "github"
       }
     },
