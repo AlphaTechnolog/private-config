@@ -9,7 +9,6 @@
       vesktop
       open-repo
       cutefetch
-      cartero
       htop
       gnome-builder
       gnome-solanum
