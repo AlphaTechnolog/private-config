@@ -4,8 +4,8 @@
 
     config = tomlFormat.generate "config.toml" {
       font = {
-        family = "monospace";
-        size = 11;
+        family = "Iosevka Nerd Font";
+        size = 12;
       };
 
       window = {
@@ -17,23 +17,23 @@
       };
 
       colors = rec {
-        background = "#141414";
-        foreground = "#d8d8d8";
-        extra.zoom-indicator = "#323232";
+        background = "#1d2021";
+        foreground = "#d4be98";
+        extra.zoom-indicator = "#32302f";
 
         normal = {
-          black = "#181818";
-          red = "#ab4642";
-          green = "#a1b56c";
-          yellow = "#f7ca88";
-          blue = "#7cafc2";
-          magenta = "#ba8baf";
-          cyan = "#86c1b9";
-          white = "#d8d8d8";
+          black = "#32302f";
+          red = "#ea6962";
+          green = "#a9b665";
+          yellow = "#d8a657";
+          blue = "#7daea3";
+          magenta = "#d3869b";
+          cyan = "#89b482";
+          white = "#d4be98";
         };
 
         bright = normal // {
-          black = "#323232";
+          black = "#32302f";
         };
       };
     };

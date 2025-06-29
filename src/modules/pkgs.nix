@@ -1,47 +1,30 @@
 { pkgs, ... }: {
-  programs.firefox = {
-    enable = true;
-  };
-
-  programs.nix-ld = {
-    enable = true;
-  };
-
-  environment = {
-    etc.openvpn = {
-      source = "${pkgs.update-resolv-conf}/libexec/openvpn";
+  programs.nix-ld.enable = true;
+  environment.systemPackages = with pkgs; (let
+    vscode = vscode-with-extensions.override {
+      vscodeExtensions = with vscode-extensions; [
+        bbenoist.nix
+        ms-vscode-remote.remote-ssh
+        ziglang.vscode-zig
+        ms-python.python
+        vue.volar
+        rust-lang.rust-analyzer
+        bradlc.vscode-tailwindcss
+      ];
     };
-
-    systemPackages = with pkgs; (let
-      vscode = vscode-with-extensions.override {
-        vscodeExtensions = with vscode-extensions; [
-          bbenoist.nix
-          ms-vscode-remote.remote-ssh
-          ziglang.vscode-zig
-          ms-python.python
-          vue.volar
-          rust-lang.rust-analyzer
-          bradlc.vscode-tailwindcss
-        ];
-      };
-    in [
-      gcc
-      pkg-config
-      cargo
-      rustc
-      zig
-      zls
-      git
-      github-cli
-      vscode
-      vim
-      emacs
-      wget
-      openvpn
-      tigervnc
-      update-resolv-conf
-      gparted
-      ntfs3g
-    ]);
-  };
+  in [
+    vscode
+    gcc
+    pkg-config
+    cargo
+    rustc
+    zig
+    zls
+    git
+    github-cli
+    wget
+    update-resolv-conf
+    gparted
+    ntfs3g
+  ]);
 }

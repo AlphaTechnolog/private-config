@@ -1,6 +1,5 @@
 {
   imports = [
-    ./disk-configuration.nix
     ./hardware-configuration.nix
     ./modules/overlays.nix
     ./modules/substituters.nix
@@ -10,7 +9,8 @@
     ./modules/users.nix
     ./modules/pkgs.nix
     ./modules/nix.nix
-    ./modules/virtualisation.nix
+    ./modules/fonts.nix
+    ./modules/steam.nix
     ./user-config
   ];
 
